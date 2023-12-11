@@ -1,12 +1,13 @@
 function isSameType(value1, value2) {
+	var ans=false;
   if (isNaN(value1) && isNaN(value2)) {
-    return true;
+ ans=true;
   }
 
   else if(typeof value1 === typeof value2){
-	  return true;
+	  ans=true;
   }
-	return false;
+	return ans;
 }
 
 
